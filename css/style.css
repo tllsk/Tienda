@@ -20,9 +20,16 @@
     text-transform: uppercase;
     font-weight: 700;
     transition: .5s;
+    width: 120px;
+    height: 40px;
+    text-align: center;
 }
 
 .btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-secondary {
     color: #FFFFFF;
 }
 
@@ -1902,4 +1909,58 @@ html, body{
 		right: 122%;
 		text-align: right;
 	}
+    /*Estilos formulario*/
+    .left_label {
+        width: 150px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    h4{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    ::placeholder,label, small,input{
+        font-family:'Roboto', sans-serif;
+    }
+    .radio_sexo {
+        margin-right: 10px;
+    }
+    
+    #rut {
+        width: 180px;
+    }
+    
+    #nombres, #apellidos, #correo {
+        width: 310px;
+    }
+    
+    #edad {
+        width: 60px;
+    }
+    
+    .borde-bootstrap-row {
+        border: 0px solid blue;
+        margin: 5px
+    }
+    
+    .error {
+        color: red;
+    }
+    
+    .centrar {
+        text-align: center;
+        margin: 10px;
+        border: 0px solid blue;
+    }
+
+
+
+
+
+
+
+
+    .form-register .text{
+        color: #2e6da4;
+    }
 }
