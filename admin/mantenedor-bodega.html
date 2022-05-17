@@ -49,5 +49,113 @@
     </nav>
     <!--final barra de navegacion-->
     
+    <div class="container-fluid pt-4 px-4">
+        <div class="bg-secondary text-center rounded p-4">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h4>MANTENEDOR DE BODEGA</h4>
+            </div>
+            <br>
+            <form class="borde-bootstrap-row form">
+                <div class="row borde-bootstrap-row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input class="form-ctrl" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label>Categoría</label>
+                            <select class="form-ctrl">
+                                <option selected="selected">Seleccionar...</option>
+                                <option>Perros</option>
+                                <option>Gatos</option>
+                                <option>Aves</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <select class="form-ctrl">
+                                <option selected="selected">Seleccionar...</option>
+                                <option>Saco Alimento Royal Canin</option>
+                                <option>Saco Alimento Don Cuchito</option>
+                                <option>Huego Gris</option>
+                                <option>Pelota de juguete</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Cantidad</label>
+                            <input class="form-ctrl" type="text">
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <img src="images/cristian_gomez.jpg" alt="">
+                            <br><br>
+                            <input class="form-control-file" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="row borde-bootstrap-row">
+                    <button class="btn btn-primary">Agregar</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-tertiary">Nuevo</button>
+                    &nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-secondary">Limpiar</button>
+                </div>
+                <div class="container-fluid pt-4 px-4">
+                    <div class="bg-secondary text-center rounded p-4">
+                        <div class="table-responsive">
+                            <table class="table text-start align-middle table-bordered table-hover mb-0">
+                                <thead>
+                                    <tr class="text-white">
+                                        <th scope="col">&nbsp;&nbsp;</th>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Categoría</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Opciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td>27</td>
+                                        <td>Perros</td>
+                                        <td>Saco alimento Royan Canin</td>
+                                        <td>Vendido</td>
+                                        <td><a href="#">Eliminar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>></td>
+                                        <td>28</td>
+                                        <td>Gatos</td>
+                                        <td>Saco alimento Don Cuchito</td>
+                                        <td>En bodega</td>
+                                        <td><a href="#">Eliminar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>29</td>
+                                        <td>Perros</td>
+                                        <td>Saco alimento Royan Canin</td>
+                                        <td>Entregado</td>
+                                        <td><a href="#">Eliminar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>30</td>
+                                        <td>Gatos</td>
+                                        <td>Saco Don Cuchito 1KG</td>
+                                        <td>En camino</td>
+                                        <td><a href="#">Eliminar</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

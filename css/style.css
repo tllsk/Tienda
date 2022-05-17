@@ -3,6 +3,7 @@
 :root {
     --primary: #7AB730;
     --secondary: #FFD33C;
+    --tertiary: #656565;
     --light: #F3F3F3;
     --dark: #212121;
 }
@@ -30,6 +31,12 @@
 }
 
 .btn-secondary {
+    color: #FFFFFF;
+}
+
+.btn-tertiary{
+    background-color: #c0b3b3;
+    border: #c0b3b3;
     color: #FFFFFF;
 }
 
@@ -481,7 +488,17 @@
     font-family: 'calibry';
     color: white;
     box-shadow: 7px 13px 37px #000;
+}
 
+.form{
+    width: 100%;
+    background:rgba(122, 183, 48, .8);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
 }
 
 .form-register h4 {
@@ -1910,11 +1927,30 @@ html, body{
 		text-align: right;
 	}
     /*Estilos formulario*/
-    .left_label {
-        width: 150px;
+    .form-group label {
+        width: 180px;
+        margin-top: 5px;
         display: inline-block;
+        text-align: left;
         vertical-align: top;
     }
+
+    .form-ctrl{
+        position: relative;
+        width:50%;
+        margin-top: 5PX;
+        padding:.375rem .75rem;
+        font-size:1rem;
+        font-weight:400;
+        line-height:1.5;
+        color:#656565;
+        background-color:#fff;
+        background-clip:padding-box;
+        border:1px solid #ced4da;
+        appearance:none;
+        transition:border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    }
+
     h4{
         font-family: 'Roboto', sans-serif;
         font-weight: 700;
