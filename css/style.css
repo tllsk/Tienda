@@ -1989,12 +1989,9 @@ html, body{
         border: 0px solid blue;
     }
 
-
-
-
-
-
-
+    .ropa {
+        width: 150px;
+    }
 
     .form-register .text{
         color: #2e6da4;
