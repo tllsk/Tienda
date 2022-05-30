@@ -4,7 +4,7 @@ $(document).ready(function() {
             $.each(data, 
                 function(i, item) {    
                     
-                    var img = `<div align="center"><img class="ropa" src="${item.image}"></div>`;
+                    var img = `<div align="center"><a href="ficha_producto.html"><img class="ropa" src="${item.image}"></a></div>`;
                     var titulo = `<h2>${item.title}</h2>`;
                     var precio = `<span>${item.price}</span>`;
 
