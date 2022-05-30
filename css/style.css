@@ -1121,16 +1121,23 @@ p {
 	--primary-color: #2B2B2C;
 	--acent-color: #DB763B;
 }
-html, body{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
+html{
 	font-size: 16px;
 	font-family: "RobotoRegular";
-	position: relative;
 	background-color: #fff;
+    min-height: 100%;
+    position: relative;
 }
+
+body{
+	font-size: 16px;
+	font-family: "RobotoRegular";
+	background-color: #fff;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+
 .text-condensedLight{ font-family: "RobotoCondensedLight"; }
 .text-center{ text-align: center; }
 .tittles{ font-family: "OswaldLight"; }
@@ -2004,4 +2011,73 @@ html, body{
     .form-register .text{
         color: #2e6da4;
     }
+
+    .footer-basic {
+        padding:40px 0;
+        background-color:#ffffff;
+        color:#4b4c4d;
+      }
+      
+      footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background:#999;
+      }
+
+      .footer-basic ul {
+        padding:0;
+        list-style:none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .footer-basic li {
+        padding:0 10px;
+      }
+      
+      .footer-basic ul a {
+        color:inherit;
+        text-decoration:none;
+        opacity:0.8;
+      }
+      
+      .footer-basic ul a:hover {
+        opacity:1;
+      }
+      
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      
+      .footer-basic .social > a {
+        font-size:24px;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        display:inline-block;
+        text-align:center;
+        border-radius:50%;
+        border:1px solid #ccc;
+        margin:0 8px;
+        color:inherit;
+        opacity:0.75;
+      }
+      
+      .footer-basic .social > a:hover {
+        opacity:0.9;
+      }
+      
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:0;
+      }
+      
 }
