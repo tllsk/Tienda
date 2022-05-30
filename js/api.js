@@ -1,59 +1,93 @@
 /*VISTA VISITA*/ 
 /*VISTA INDEX*/
-$(document).ready(function() {
-    $.get("https://fakestoreapi.com/products",
-        function(data) {
-            $.each(data, 
-                function(i, item) {    
-                    
-                    var img = `<div align="center"><a href="ficha_producto.html"><img class="ropa" src="${item.image}"></a></div>`;
-                    var titulo = `<h2>${item.title}</h2>`;
-                    var precio = `<span>${item.price}</span>`;
+const datos_v = document.querySelector('#productos')
+const url_v = 'https://fakestoreapi.com/products'
 
-                    var div2 = `<div>${titulo}${precio}</div>`;
-                    var div1 = `<div class="col-md-4 mb-3" style="border: 1px solid #3a3a3b;">${img}${div2}</div>`;
+fetch(url_v)
+.then(res => res.json())
+.then(data => {
+    data.forEach(producto => {
+        const attr1 = document.createAttribute("align")
+        attr1.value ="center"
+        const attr = document.createAttribute("class")
+        attr.value = "col-md-4 mb-3"
 
-                    $('#productos').append(div1);
-                });
-        });    
-});
+        var div = document.createElement('div')
+        div.setAttributeNode(attr)
+        div.setAttributeNode(attr1)
+        div.setAttribute('id',producto.id)
+        div.addEventListener('click', function(){
+            window.location.href = `ficha_producto.html?id=${producto.id}`
+        });
+        div.style.border = '1px solid #3a3a3b'
+        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+                        <div>
+                            <h2>${producto.title}</h2>
+                            <span>${producto.price}</span>
+                        </div>`
+        datos_v.appendChild(div)
+    })
+})
 
 /*VISTA ADMIN*/
 /*VISTA INDEX*/
-$(document).ready(function() {
-    $.get("https://fakestoreapi.com/products",
-        function(data) {
-            $.each(data, 
-                function(i, item) {    
-                    
-                    var img = `<div align="center"><a href="../admin/ficha_producto.html"><img class="ropa" src="${item.image}"></a></div>`;
-                    var titulo = `<h2>${item.title}</h2>`;
-                    var precio = `<span>${item.price}</span>`;
+const datos_a = document.querySelector('#productos_adm')
+const url_a = 'https://fakestoreapi.com/products'
 
-                    var div2 = `<div>${titulo}${precio}</div>`;
-                    var div1 = `<div class="col-md-4 mb-3" style="border: 1px solid #3a3a3b;">${img}${div2}</div>`;
+fetch(url_a)
+.then(res => res.json())
+.then(data => {
+    data.forEach(producto => {
+        const attr1 = document.createAttribute("align")
+        attr1.value ="center"
+        const attr = document.createAttribute("class")
+        attr.value = "col-md-4 mb-3"
 
-                    $('#productos_adm').append(div1);
-                });
-        });   
-});
+        var div = document.createElement('div')
+        div.setAttributeNode(attr)
+        div.setAttributeNode(attr1)
+        div.setAttribute('id',producto.id)
+        div.addEventListener('click', function(){
+            window.location.href = `../admin/ficha_producto.html?id=${producto.id}`
+        })
+        div.style.border = '1px solid #3a3a3b'
+        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+                        <div>
+                            <h2>${producto.title}</h2>
+                            <span>${producto.price}</span>
+                        </div>`
+        datos_a.appendChild(div)
+    })
+})
 
 /*VISTA CLIENTE*/
 /*VISTA INDEX*/
-$(document).ready(function() {
-    $.get("https://fakestoreapi.com/products",
-        function(data) {
-            $.each(data, 
-                function(i, item) {    
-                    
-                    var img = `<div align="center"><img class="ropa" src="${item.image}"></div>`;
-                    var titulo = `<h2>${item.title}</h2>`;
-                    var precio = `<div align="center"><a class="btn btn-sm btn-primary" href="../cliente/ficha_producto.html">COMPRAR</a></div><span>${item.price}</span>`;
+const datos_c = document.querySelector('#productos_cli')
+const url_c = 'https://fakestoreapi.com/products'
 
-                    var div2 = `<div>${titulo}${precio}</div>`;
-                    var div1 = `<div class="col-md-4 mb-3" style="border: 1px solid #3a3a3b;">${img}${div2}</div>`;
+fetch(url_c)
+.then(res => res.json())
+.then(data => {
+    data.forEach(producto => {
+        const attr1 = document.createAttribute("align")
+        attr1.value ="center"
+        const attr = document.createAttribute("class")
+        attr.value = "col-md-4 mb-3"
 
-                    $('#productos_cli').append(div1);
-                });
-        }); 
-});
+        var div = document.createElement('div')
+        div.setAttributeNode(attr)
+        div.setAttributeNode(attr1)
+        div.setAttribute('id',producto.id)
+        div.addEventListener('click', function(){
+            window.location.href = `../cliente/ficha_producto.html?id=${producto.id}`
+        })
+        div.style.border = '1px solid #3a3a3b'
+        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+                        <div>
+                            <h2>${producto.title}</h2>
+                            <span>${producto.price}</span>
+                            <a class="btn btn-sm btn-primary" href="../cliente/carrito.html">COMPRAR</a>
+                        </div>`
+        datos_c.appendChild(div)
+    })
+})
