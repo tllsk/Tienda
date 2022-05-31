@@ -42,7 +42,7 @@ fetch(`${url_c}/${id}`)
                             <h2>${data.title}</h2>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
-                            <a class="btn btn-sm btn-primary" href="../cliente/ficha_producto.html">COMPRAR</a>
+                            <a class="btn btn-sm btn-primary" href="../cliente/carrito.html">COMPRAR</a>
                         </div>`;
     dato_c.appendChild(div);
 });
