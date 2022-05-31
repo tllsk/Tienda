@@ -2008,6 +2008,11 @@ body{
         margin-top: 5px;
     }
 
+    .ropa_ficha{
+        width: 250px;
+        height: 250px;
+        margin-top: 5px;
+    }
     .form-register .text{
         color: #2e6da4;
     }

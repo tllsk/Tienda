@@ -12,7 +12,7 @@ fetch(`${url_v}/${id}`)
     precio.innerHTML=data.price
 
     div.innerHTML = `<div>
-                        <img class="ropa" src="${data.image}">
+                        <img class="ropa_ficha" src="${data.image}">
                     </div>
                         <div>
                             <h2>${data.price}<h2>
@@ -35,7 +35,7 @@ fetch(`${url_c}/${id}`)
     const div = document.createElement('div');
     
     div.innerHTML = `<div>
-                        <img class="ropa" src="${data.image}">
+                        <img class="ropa_ficha" src="${data.image}">
                     </div>
                         <div>
                             <h2>${data.price}<h2>
@@ -59,11 +59,12 @@ fetch(`${url_a}/${id}`)
     const div = document.createElement('div');
     
     div.innerHTML = `<div>
-                        <img class="ropa" src="${data.image}">
+                        <img class="ropa_ficha" src="${data.image}">
+                        <h2>${data.price}<h2>
+                        <h2>${data.title}</h2>
                     </div>
                         <div>
-                            <h2>${data.price}<h2>
-                            <h2>${data.title}</h2>
+                            
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
                         </div>`;
