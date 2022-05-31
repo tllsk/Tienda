@@ -13,10 +13,10 @@ fetch(`${url_v}/${id}`)
 
     div.innerHTML = `<div>
                         <img class="ropa_ficha" src="${data.image}">
-                    </div>
-                        <div>
                             <h2>${data.price}<h2>
                             <h2>${data.title}</h2>
+                    </div>
+                        <div>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
                         </div>`
@@ -36,10 +36,10 @@ fetch(`${url_c}/${id}`)
     
     div.innerHTML = `<div>
                         <img class="ropa_ficha" src="${data.image}">
-                    </div>
-                        <div>
                             <h2>${data.price}<h2>
                             <h2>${data.title}</h2>
+                    </div>
+                        <div>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
                             <a class="btn btn-sm btn-primary" href="../cliente/carrito.html">COMPRAR</a>
@@ -64,7 +64,6 @@ fetch(`${url_a}/${id}`)
                         <h2>${data.title}</h2>
                     </div>
                         <div>
-                            
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
                         </div>`;
