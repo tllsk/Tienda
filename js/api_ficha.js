@@ -11,15 +11,15 @@ fetch(`${url_v}/${id}`)
     const precio = document.createElement('p')
     precio.innerHTML=data.price
 
-    div.innerHTML = `<div>
-                        <img class="ropa_ficha" src="${data.image}">
+    div.innerHTML = `<div style="position: relative;">
+                        <img class="ropa_ficha" src="${data.image}"width="90%" >
+                        <div style="position: absolute; float: right; top:0; right:0;">
                             <h2>${data.price}<h2>
                             <h2>${data.title}</h2>
-                    </div>
-                        <div>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
-                        </div>`
+                        </div>
+                    </div>`
     dato_v.appendChild(div)
 })
 
@@ -34,16 +34,16 @@ fetch(`${url_c}/${id}`)
 .then(data =>{
     const div = document.createElement('div');
     
-    div.innerHTML = `<div>
-                        <img class="ropa_ficha" src="${data.image}">
+    div.innerHTML = `<div style="position: relative;">
+                        <img class="ropa_ficha" src="${data.image}"width="90%" >
+                        <div style="position: absolute; float: right; top:0; right:0;">
                             <h2>${data.price}<h2>
                             <h2>${data.title}</h2>
-                    </div>
-                        <div>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
                             <a class="btn btn-sm btn-primary" href="../cliente/carrito.html">COMPRAR</a>
-                        </div>`;
+                        </div>
+                    </div>`;
     dato_c.appendChild(div);
 });
 
@@ -58,14 +58,14 @@ fetch(`${url_a}/${id}`)
 .then(data =>{
     const div = document.createElement('div');
     
-    div.innerHTML = `<div>
-                        <img class="ropa_ficha" src="${data.image}">
-                        <h2>${data.price}<h2>
-                        <h2>${data.title}</h2>
-                    </div>
-                        <div>
+    div.innerHTML = `<div style="position: relative;">
+                        <img class="ropa_ficha" src="${data.image}"width="90%" >
+                        <div style="position: absolute; float: right; top:0; right:0;">
+                            <h2>${data.price}<h2>
+                            <h2>${data.title}</h2>
                             <p>Descripcion:</p>
                             <p>${data.description}</p>
-                        </div>`;
+                        </div>
+                    </div>`;
     dato_a.appendChild(div);
 });

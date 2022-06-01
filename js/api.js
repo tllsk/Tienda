@@ -20,7 +20,7 @@ fetch(url_v)
             window.location.href = `ficha_producto.html?id=${producto.id}`
         });
         div.style.border = '1px solid #3a3a3b'
-        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+        div.innerHTML = `<img class="ropa" src="${producto.image}" width="32%">
                         <div>
                             <h2>${producto.title}</h2>
                             <span>${producto.price}</span>
@@ -51,7 +51,7 @@ fetch(url_a)
             window.location.href = `../admin/ficha_producto.html?id=${producto.id}`
         })
         div.style.border = '1px solid #3a3a3b'
-        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+        div.innerHTML = `<img class="ropa" src="${producto.image}" width="32%">
                         <div>
                             <h2>${producto.title}</h2>
                             <span>${producto.price}</span>
@@ -82,7 +82,7 @@ fetch(url_c)
             window.location.href = `../cliente/ficha_producto.html?id=${producto.id}`
         })
         div.style.border = '1px solid #3a3a3b'
-        div.innerHTML = `<img class="ropa" src="${producto.image}" >
+        div.innerHTML = `<img class="ropa" src="${producto.image}" width="32%">
                         <div>
                             <h2>${producto.title}</h2>
                             <span>${producto.price}</span>
