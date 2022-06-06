@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,10 @@
     <!--Importar iconos-->
     <script src="https://kit.fontawesome.com/0bdff919f0.js" crossorigin="anonymous"></script>
     <!--Final importar iconos-->
-    
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -32,6 +33,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
+
 <body>
     <!--barra de navegacion-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
@@ -47,33 +49,517 @@
                 <a href="registrarse.html" class="nav-item nav-link">Registrarse</a>
                 <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
                 <div class="d-flex align-items-center ms-4 mb-4">
-                <a href="ingresar.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">INGRESAR <i class="bi bi-arrow-right"></i></a>
+                    <a href="ingresar.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">INGRESAR <i class="bi bi-arrow-right"></i></a>
+                </div>
             </div>
-        </div>
-        
+
     </nav>
     <!--final barra de navegacion-->
-    
-    <section class="container-fluid pt-4 px-4">
-        <h4>PRODUCTOS</h4>
-        <div class="row" id="productos"></div>
-    </section>
 
-    <!--Inicio footer-->
-    <div class="footer-basic">
-        <footer>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
-                <li class="list-inline-item"><a href="nosotros.html">Nosotros</a></li>
-            </ul>
-            <p class="copyright">Petshop © 2022</p>
-        </footer>
-    </div>
-    <!--Fin footer-->
+    <div class="products">
+        <div class="banner">
+            <a href="ropa.html"><img src="img/Banner.png" alt="" width="60%"></a>
+        </div>
+        <div class="container">
+            <h4>PRODUCTOS</h4>
+            <div class="row">
+                <div class="col-md-12" id="lista-productos">
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="col-lg-4 col-md-4 all food all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_1.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE ADULT LARGE BREED SALMON & POTATO 12 KG</h4>
+                                        </a>
+                                        <h6>$58.400</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 all food all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_2.png" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE PUPPY LAMB & RICE 12KG</h4>
+                                        </a>
+                                        <h6>$56.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (24)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 all food all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_3.png" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE VENISON & POTATO 12KG</h4>
+                                        </a>
+                                        <h6>$72.800</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (36)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 all food all cats">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_4.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE CAT STERILIZED WEIGHT CONTROL 7KG</h4>
+                                        </a>
+                                        <h6>$45.900</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (48)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 all food all cats">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_5.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE CAT SENIOR WEIGHT CONTROL 7KG</h4>
+                                        </a>
+                                        <h6>$48.600</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (60)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 all food all cats">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/ali_seco_6.png" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>BRIT CARE HAIRCARE & SHINY COAT 7KG</h4>
+                                        </a>
+                                        <h6>$52.900</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (72)</span>
+                                    </div>
+                                </div>
+                            </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="js/api.js"></script>
+                            <div class="col-lg-4 col-md-4 all accs all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_1.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>FP FLIPPY ONE CORREA RETRACTIL EN CINTA</h4>
+                                        </a>
+                                        <h6>$25.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all accs all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_2.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>ZEE.RUN BELT SMALL TALLA S</h4>
+                                        </a>
+                                        <h6>$28.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all accs all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_3.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>ZEUS BOZAL ALPHA TALLA M</h4>
+                                        </a>
+                                        <h6>$25.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all accs all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_4.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>AFP CHILL OUT ICE BANDANA CONGELABLE TALLA M</h4>
+                                        </a>
+                                        <h6>$11.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all accs all dogs">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_5.jpg" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>AFP CHILL OUT MAT DE ENFRIAMIENTO TALLA M</h4>
+                                        </a>
+                                        <h6>$20.000</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 all accs all dogs all cats">
+                                <div class="product-item">
+                                    <a href="ficha_producto.html"><img src="img/accs_dog_6.png" alt=""></a>
+                                    <div class="down-content">
+                                        <a href="ficha_producto.html">
+                                            <h4>CORTA UÑAS PARA PERROS Y GATOS</h4>
+                                        </a>
+                                        <h6>$4.200</h6>
+                                        <ul class="stars">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                        <span>Reviews (12)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="filters-content">
+                                    <div class="row grid">
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_1.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>ZEECAT GOTHAM COLLAR</h4>
+                                                    </a>
+                                                    <h6>$5.000</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_2.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>ATLANTA HARNESS + LEASH SET</h4>
+                                                    </a>
+                                                    <h6>$12.000</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_3.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>CATIT ZONA DE CONFORT</h4>
+                                                    </a>
+                                                    <h6>$23.900</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_4.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>CATIT FILTRO FUENTE MINI 3 UD</h4>
+                                                    </a>
+                                                    <h6>$4.000</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_5.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>NEON CORAL LEASH + HARNESS SET</h4>
+                                                    </a>
+                                                    <h6>$11.900</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/accs_cat_6.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>ZEECAT PARKER COLLAR</h4>
+                                                    </a>
+                                                    <h6>$4.900</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_1.png" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>BOWL UFO PARA PERROS</h4>
+                                                    </a>
+                                                    <h6>$10.000</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_2.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>LIVING WORLD ESPERAS MADERA PARA ROER</h4>
+                                                    </a>
+                                                    <h6>$4.500</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_3.png" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>PELOTA PARA PERROS</h4>
+                                                    </a>
+                                                    <h6>$8.000</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_4.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>ZEUS NOSH HUESO FLEX CACHORRO SABOR TOCINO</h4>
+                                                    </a>
+                                                    <h6>$5.500</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_5.png" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>AFP OUTDOOR BALL THROWER</h4>
+                                                    </a>
+                                                    <h6>$9.600</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 all accs all cats">
+                                            <div class="product-item">
+                                                <a href="ficha_producto.html"><img src="img/toys_dog_6.jpg" alt=""></a>
+                                                <div class="down-content">
+                                                    <a href="ficha_producto.html">
+                                                        <h4>AFP LITTLE BUDDY CHUPETE VERDE SMALL</h4>
+                                                    </a>
+                                                    <h6>$4.500</h6>
+                                                    <ul class="stars">
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                        <li><i class="fa fa-star"></i></li>
+                                                    </ul>
+                                                    <span>Reviews (12)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Inicio footer-->
+                            <div class="footer-basic">
+                                <footer>
+                                    <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a>
+                                        <a href="#"><i class="icon ion-social-twitter"></i></a>
+                                        <a href="#"><i class="icon ion-social-facebook"></i></a></div>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                                        <li class="list-inline-item"><a href="nosotros.html">Nosotros</a></li>
+                                    </ul>
+                                    <p class="copyright">Petshop © 2022</p>
+                                </footer>
+                            </div>
+                            <!--Fin footer-->
+
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+                            <script src="js/api.js"></script>
 </body>
+
 </html>

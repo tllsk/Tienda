@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,10 @@
     <!--Importar iconos-->
     <script src="https://kit.fontawesome.com/0bdff919f0.js" crossorigin="anonymous"></script>
     <!--Final importar iconos-->
-    
+
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -30,8 +31,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+
 </head>
+
 <body>
     <!--barra de navegacion-->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm py-3 py-lg-0 px-3 px-lg-0">
@@ -49,15 +51,56 @@
                 <a href="#" class="nav-item nav-link">Mis Compras</a>
                 <a href="#" class="nav-item nav-link">Carrito</a>
                 <div class="d-flex align-items-center ms-4 mb-4">
-                <a href="../index.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">INGRESAR <i class="bi bi-arrow-right"></i></a>
+                    <a href="../index.html" class="nav-item nav-link nav-contact bg-primary text-white px-5 ms-lg-5">INGRESAR <i class="bi bi-arrow-right"></i></a>
+                </div>
             </div>
-        </div>
-        
+
     </nav>
     <!--final barra de navegacion-->
-    
-    <div class="container" id="producto_cli">
-        <h4>FICHA DEL PRODUCTO</h4>
+    <div class="container bs-product">
+        <h4>INFORMACIÓN DEL PRODUCTO</h4>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <section class="col-12 relative">
+                        <div class="slick-initialized slick-slider">
+                            <div class="slick-list">
+                                <div class="slick-track" style="opacity: 1; width: 658px;">
+                                    <div style="width: 329px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                                        <div class="bs-img-square">
+                                            <picture>
+                                                <img src="../img/ali_seco_1.jpg" alt="Brit Care Adult Large Breed Salmón 12kg1" title="Brit Care Adult Large Breed Salmón 12kg1" style="opacity: 1;">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="col-sm">
+                <article data-bs="product.detail">
+                    <h1>Brit Care Adult Large Breed Salmon And Potato 12kg</h1>
+                    <br>
+                    <section class="bs-product-description">
+                        <p>Alimento libre de granos para perros adultos desde 2 a 7 años de razas grandes (25 a 45kg). Con Salmón</p>
+                    </section>
+                    <div>
+                        <h3 class="my-3 text-primary" data-bs="product.stock">Disponible</h3>
+                    </div>
+                    <!------------------------form add to cart ------------------------------------------>
+                    <div class="row" id="bs-product-form">
+                        <div class="col-12 col-md-6 form-group">
+                            <div> Precio <span class="h2">$58.400<span></span></span>
+                            </div>
+                            <a class="btn btn-sm btn-secondary" href="../cliente/carrito.html">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
     </div>
 
     <!--Inicio footer-->
@@ -75,6 +118,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/api_ficha.js"></script>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
-$('#registro').validate({ 
+$('#registro').validate({
     "rules": {
         "rut": {
             required: true,
@@ -18,12 +18,12 @@ $('#registro').validate({
         },
         "password": {
             required: true,
-            minlength : 10,
+            minlength: 10,
         },
         "password2": {
             required: true,
-            minlength : 10,
-            equalTo : "#password",
+            minlength: 10,
+            equalTo: "#password",
         },
     },
     messages: {
@@ -55,6 +55,119 @@ $('#registro').validate({
     }
 });
 
+$('#mantenerU').validate({
+    "rules": {
+        "id": {
+            required: true,
+        },
+        "rut": {
+            required: true,
+        },
+        "nombres": {
+            required: true,
+        },
+        "apellidos": {
+            required: true,
+        },
+        "direccion": {
+            required: true,
+        },
+        "password": {
+            required: true,
+            minlength: 10,
+        },
+    },
+    messages: {
+        "id": {
+            required: 'Debe ingresar un ID válido',
+        },
+        "rut": {
+            required: 'Debe ingresar un RUT válido',
+        },
+        "nombres": {
+            required: 'Debe ingresar sus nombres',
+        },
+        "apellidos": {
+            required: 'Debe ingresar sus apellidos',
+        },
+        "direccion": {
+            required: 'Debe ingresar su dirección',
+        },
+        "password": {
+            required: 'Debe ingresar una password',
+            minlength: 'La mínima cantidad de caracteres de la contraseña es 10',
+        },
+    }
+});
+
+$('#mantenerP').validate({
+    "rules": {
+        "id": {
+            required: true,
+        },
+        "categoria": {
+            required: true,
+        },
+        "nombre": {
+            required: true,
+        },
+        "descripcion": {
+            required: true,
+        },
+        "precio": {
+            required: true,
+        },
+    },
+    messages: {
+        "id": {
+            required: 'Debe ingresar un ID válido',
+        },
+        "nombre": {
+            required: 'Debe ingresar el nombre',
+        },
+        "descripcion": {
+            required: 'Debe ingresar la descripcion',
+        },
+        "categoria": {
+            required: 'Debe seleccionar una categoria',
+        },
+        "precio": {
+            required: 'Debe ingresar un precio',
+        },
+    }
+});
+
+$('#mantenerB').validate({
+    "rules": {
+        "id": {
+            required: true,
+        },
+        "categoria": {
+            required: true,
+        },
+        "nombre": {
+            required: true,
+        },
+        "cantidad": {
+            required: true,
+        },
+    },
+    messages: {
+        "id": {
+            required: 'Debe ingresar un ID válido',
+        },
+        "nombre": {
+            required: 'Debe seleccionar el nombre',
+        },
+        "categoria": {
+            required: 'Debe seleccionar una categoria',
+        },
+        "cantidad": {
+            required: 'Debe ingresar la cantidad',
+        },
+    }
+});
+
 function validateEmail(email) {
     var re = /\S+@\S+\.\S+/;
     return re.test(email);
@@ -66,16 +179,17 @@ function validateRut(rutCompleto) {
         return false;
     var tmp = rutCompleto.split('-');
     var rut = tmp[0];
-    var digv = tmp[1]; 
-    if (digv == 'k') digv = 'K' ;
-    return (dv(rut) == digv );
+    var digv = tmp[1];
+    if (digv == 'k') digv = 'K';
+    return (dv(rut) == digv);
 }
 
 function dv(T) {
-    var M=0,S=1;
-    for(; T; T = Math.floor(T/10))
-        S=(S + T % 10 * (9 - M++ %6))%11;
-    return S?S-1:'k';
+    var M = 0,
+        S = 1;
+    for (; T; T = Math.floor(T / 10))
+        S = (S + T % 10 * (9 - M++ % 6)) % 11;
+    return S ? S - 1 : 'k';
 }
 
 // Uso de la función validateRut
@@ -139,9 +253,8 @@ $('#buscarfoto').on('change', function(e) {
 $('#mostrar-bordes').on('click', function(e) {
     let borde = $('.borde-bootstrap-row').css('border');
     if (borde.includes('1px')) {
-        $('.borde-bootstrap-row').css({'border': '0px solid blue'});
-    }
-    else {
-        $('.borde-bootstrap-row').css({'border': '1px solid blue'});
+        $('.borde-bootstrap-row').css({ 'border': '0px solid blue' });
+    } else {
+        $('.borde-bootstrap-row').css({ 'border': '1px solid blue' });
     }
 });
